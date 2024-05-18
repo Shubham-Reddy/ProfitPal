@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Profit & Loss Game</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('gre.jpg'); /* Replace 'gre.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to improve readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Profit & Loss Game</h1>
+        <p>Welcome to the world of restaurant management! Are you ready to build and run your own restaurant?</p>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+        // Add your JavaScript code here
+        function startGame() {
+            // Prompt the user to enter the number of questions
+            var numberOfQuestions = prompt("How many questions do you want to answer?", "10");
+            if (numberOfQuestions !== null && numberOfQuestions !== "") {
+                // Redirect to the game page with the number of questions as a query parameter
+                window.location.href = `game.html?questions=${numberOfQuestions}`; // Replace 'game.html' with the path to your game page
+            } else {
+                // If the user cancels or leaves the input field empty, do nothing
+                return;
+            }
+        }
+    </script>
+</body>
+</html>

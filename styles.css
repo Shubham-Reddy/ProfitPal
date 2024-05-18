@@ -1,0 +1,74 @@
+body {
+    font-family: 'Baloo 2', cursive;
+    background-color: #ecf9f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #136a3e;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #136a3e;
+    margin-bottom: 20px;
+}
+
+#options {
+    text-align: center;
+}
+
+.option {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.feedback-correct {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.feedback-incorrect {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+#customerReview {
+    margin-top: 20px;
+}
+
+#funFact {
+    font-style: italic;
+    color: #6c757d;
+    margin-top: 20px;
+}
